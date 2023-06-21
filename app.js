@@ -167,82 +167,82 @@ function menuInterativo(){
   } while (option !== "5")
 }
 
-const array = ["Frodo", "Sam", "Merry", "Pippin", "Gandalf", "Aragorn", "Legolas", "Gimli"]
-console.log(array)
+// const array = ["Frodo", "Sam", "Merry", "Pippin", "Gandalf", "Aragorn", "Legolas", "Gimli"]
+// console.log(array)
 
-//Adicionar elementos no final do array
-//push
-let tamanho = array.push("Boromir")
-console.log(array)
-console.log(tamanho)
+// //Adicionar elementos no final do array
+// //push
+// let tamanho = array.push("Boromir")
+// console.log(array)
+// console.log(tamanho)
 
-//Adicionar elementos no início do array
-//unshift
-tamanho = array.unshift("Teste")
-console.log(array)
-console.log(tamanho)
+// //Adicionar elementos no início do array
+// //unshift
+// tamanho = array.unshift("Teste")
+// console.log(array)
+// console.log(tamanho)
 
-//Remover elementos do final do array
-let elementoRemovido = array.pop()
-console.log(array)
-console.log(elementoRemovido)
+// //Remover elementos do final do array
+// let elementoRemovido = array.pop()
+// console.log(array)
+// console.log(elementoRemovido)
 
-//Remover primeiro elemento
-//shift
-elementoRemovido = array.shift()
-console.log(array)
-console.log(elementoRemovido)
+// //Remover primeiro elemento
+// //shift
+// elementoRemovido = array.shift()
+// console.log(array)
+// console.log(elementoRemovido)
 
-//Pesquisar por um elemento
-//includes
-const inclui = array.includes("Gandalf")
-console.log(inclui)
+// //Pesquisar por um elemento
+// //includes
+// const inclui = array.includes("Gandalf")
+// console.log(inclui)
 
-//Pesquisar por um índice
-//indexOf
-const indice = array.indexOf("Gandalf")
-console.log(indice)
+// //Pesquisar por um índice
+// //indexOf
+// const indice = array.indexOf("Gandalf")
+// console.log(indice)
 
-//Cortar array
-//slice
-const hobbits = array.slice(0, 4)
-const outros = array.slice(-4)
-console.log(hobbits)
-console.log(outros)
+// //Cortar array
+// //slice
+// const hobbits = array.slice(0, 4)
+// const outros = array.slice(-4)
+// console.log(hobbits)
+// console.log(outros)
 
-//Concatenar
-//concat
-const sociedade = hobbits.concat(outros, "Boromir")
-console.log(sociedade )
+// //Concatenar
+// //concat
+// const sociedade = hobbits.concat(outros, "Boromir")
+// console.log(sociedade )
 
-//Substituição de elementos
-//splice
-const elementosRemovidos = sociedade.splice(indice, 1, "Gandalf, o Cinzento")
-console.log(sociedade)
-console.log(elementosRemovidos)
+// //Substituição de elementos
+// //splice
+// const elementosRemovidos = sociedade.splice(indice, 1, "Gandalf, o Cinzento")
+// console.log(sociedade)
+// console.log(elementosRemovidos)
 
-//Iterar sobre os elementos
-for (let indice = 0; indice < sociedade.length; indice++) {
-  const elemento = sociedade[indice]
-  console.log(elemento + " se encontra na posição " + indice)
-}
+// //Iterar sobre os elementos
+// for (let indice = 0; indice < sociedade.length; indice++) {
+//   const elemento = sociedade[indice]
+//   console.log(elemento + " se encontra na posição " + indice)
+// }
 
-const arr = [
-  "1º Nível",
-  ["2º Nível", 42, true],
-  [
-    ["3º Nível, 1º item", "Olá mundo!"]
-    ["3º Nível, 2º item", "Oi mundo!"]
-  ],
-  []
-]
+// const arr = [
+//   "1º Nível",
+//   ["2º Nível", 42, true],
+//   [
+//     ["3º Nível, 1º item", "Olá mundo!"]
+//     ["3º Nível, 2º item", "Oi mundo!"]
+//   ],
+//   []
+// ]
 
-console.log(arr)
-console.log(arr[0])
-console.log(arr[1])
-console.log(arr[1][0])
-console.log(arr[1][1])
-console.log(arr[3][0])
+// console.log(arr)
+// console.log(arr[0])
+// console.log(arr[1])
+// console.log(arr[1][0])
+// console.log(arr[1][1])
+// console.log(arr[3][0])
 
 function controleFinanceiro(){
   let money = Number(prompt("Informe o saldo atual (R$)?"))
@@ -292,7 +292,7 @@ function palindromos(){
     reverseWord += word[i]
   }
 
-  if (reverseWord === word) {
+  if (reverseWord.toLowerCase() === word.toLowerCase()) {
     alert(word + " é um palíndromo")
   } else {
     alert(word + " nâo é um palíndromo")
